@@ -1,0 +1,169 @@
+* {
+	font-family: "Cinzel", serif;
+	box-sizing: border-box;
+}
+body {
+	color: rgb(76, 79, 68);
+}
+/* header styles */
+header {
+	background-color: rgb(76, 79, 68);
+	height: 50px;
+	/* display: block; */
+	position: sticky;
+	top: 0;
+}
+#logo,
+#nav-bar,
+#search-box {
+	display: inline-block;
+}
+#logo img {
+	width: 50px;
+}
+#logo {
+	position: absolute;
+	left: 20px;
+	top: -1px;
+}
+#nav-bar {
+	width: 500px;
+	height: 50px;
+	position: absolute;
+	left: 250px;
+	top: 1px;
+}
+#nav-bar ul {
+	width: 800px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#nav-bar li {
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	line-height: 50px;
+}
+#nav-bar a {
+	height: 50px;
+	text-decoration: none;
+	color: white;
+}
+li:hover {
+	background-color: rgb(218, 235, 196);
+	color: rgb(76, 79, 68);
+}
+#home {
+	margin-right: 100px;
+}
+#store {
+	margin-left: 100px;
+}
+#search-box {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+}
+input[type="search"] {
+	border: 2px solid rgb(133, 133, 133);
+	border-radius: 5px 0 5px 0;
+}
+/* main styles */
+#title {
+	background-color: rgba(207, 235, 184, 0.2);
+	margin: 50px 0;
+	padding: 50px;
+}
+h1,
+h3 {
+	text-align: center;
+	margin: 0;
+}
+.description {
+	text-align: center;
+	font-weight: 900;
+	margin: 0;
+	margin-top: 5px;
+}
+ol {
+	text-align: center;
+	list-style-position: inside;
+	padding: 0;
+}
+
+#photos {
+	width: 910px;
+	margin: 50px auto;
+}
+#photos img {
+	width: 300px;
+	height: 461.538px;
+}
+#go-here {
+	width: 50px;
+	height: 50px;
+}
+#add-book-form {
+	width: 460px;
+	background-color: rgba(207, 235, 184, 0.2);
+	border-radius: 10px;
+	padding: 10px;
+	margin: 20px auto;
+	box-shadow: 1px 1px 2px rgb(148, 152, 136), -1px -1px 2px rgb(148, 152, 136);
+}
+#add-book-form fieldset {
+	border: none;
+	text-align: center;
+}
+#add-book-form input[type="radio"] {
+	accent-color: rgb(76, 79, 68);
+}
+#add-book-form label,
+#add-book-form input {
+	margin-bottom: 10px;
+}
+legend {
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+	margin-bottom: 20px;
+	/* text-shadow: 1px 1px 2px gray; */
+	text-align: center;
+}
+select {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.btn {
+	width: 200px;
+	border: 1px solid rgb(76, 79, 68);
+	border-radius: 5px;
+}
+.btn:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(76, 79, 68);
+	cursor: pointer;
+}
+table {
+	margin: 50px auto;
+	text-align: center;
+}
+thead {
+	background-color: rgba(207, 235, 184, 0.2);
+}
+footer {
+	color: brown;
+	text-align: center;
+}
+.fa-youtube {
+	position: fixed;
+	bottom: 0;
+	right: 3px;
+}
+/* footer a {
+	background-color: transparent;
+} */
+/* span {
+	color: white;
+} */

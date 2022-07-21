@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<title>Mybooks.com</title>
+	</head>
+	<body id="up">
+		<header>
+			<div id="logo">
+				<img
+					src="https://play-lh.googleusercontent.com/gu08Nedo6HykBBNpwC2D83vp7WYIJAaXLDhg_PTW_DJiJv2-2yd8wsOopsTeCnLLHEiq=w240-h480-rw"
+					alt="books"
+				/>
+			</div>
+			<nav id="nav-bar">
+				<ul>
+					<a href="#up"
+						><li id="home">
+							<i class="fa fa-home fa-fw" aria-hidden="true"></i> HOME
+						</li></a
+					>
+					<a href="#go-here"><li id="add">ADD A BOOK</li></a>
+					<a href="https://bookshop.org/" target="_blank"
+						><li id="store">STORE</li></a
+					>
+				</ul>
+			</nav>
+			<div id="search-box">
+				<form action="#">
+					<input type="search" placeholder="book name" />
+					<button type="submit">Search</button>
+				</form>
+			</div>
+		</header>
+		<main>
+			<div id="title">
+				<h1>My books website</h1>
+				<p class="description">
+					you can find <span>book suggestions</span> and buy your favorite book
+				</p>
+			</div>
+			<div>
+				<h3>Top books:</h3>
+				<ol>
+					<li>The Little Prince</li>
+					<li>The Lord of The Rings</li>
+					<li>A Brief History of Time</li>
+				</ol>
+			</div>
+
+			<div id="photos">
+				<img
+					src="https://images-na.ssl-images-amazon.com/images/I/71QKrhhMJIL.jpg"
+					alt="The little prince"
+				/>
+				<img
+					src="https://cdn.lifehack.org/wp-content/uploads/2015/03/9780618640157_custom-s6-c30.jpg"
+					alt="the lord of the rings"
+				/>
+				<img
+					src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F03%2F91xl8vzglyl-2000.jpg"
+					alt="A brief history of time"
+				/>
+			</div>
+			<div id="go-here"></div>
+			<div id="add-book-form">
+				<form action="#">
+					<fieldset>
+						<legend>Add a book suggestion</legend>
+
+						<label for="book-name">Book Name:</label><br />
+						<input type="text" id="book-name" required /><br />
+
+						<label for="author-name">Author Name:</label><br />
+						<input type="text" id="author-name" required /><br />
+
+						<label for="price">price:</label><br />
+						<input type="number" id="price" required /><br />
+
+						<label for="publication-date">Publication Date:</label><br />
+						<input type="date" id="publication-date" required /><br />
+
+						<label for="available-in-store">Available in store:</label>
+						<input type="radio" id="yes" name="yes-no" value="yes" checked />
+						<label for="yes">Yes</label>
+
+						<input type="radio" id="no" name="yes-no" value="no" />
+						<label for="no">No</label><br />
+
+						<label for="book-type">Type of book:</label>
+						<select>
+							<option value="null">Select a book genre</option>
+							<option value="action-and-adventure">Action and Adventure</option>
+							<option value="classic">Classic</option>
+							<option value="detective-and-mystery">
+								Detective and Mystery
+							</option>
+							<option value="fantasy">Fantasy</option>
+							<option value="horror">Horror</option>
+							<option value="fiction">Fiction</option></select
+						><br /><br /><br />
+
+						<input class="btn" type="submit" value="submit" id="submit" />
+						<input class="btn" type="reset" value="reset" id="reset" />
+					</fieldset>
+				</form>
+			</div>
+			<div>
+				<table border="1">
+					<caption>
+						Suggested books
+					</caption>
+					<thead>
+						<tr>
+							<th>Book Name</th>
+							<th>Author</th>
+							<th>Price in dollars</th>
+							<th>Publication Date</th>
+							<th>Availability</th>
+							<th>Book Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>In search of Lost Time</td>
+							<td>Marcel Proust</td>
+							<td>50</td>
+							<td>June 3, 2003</td>
+							<td>Available</td>
+							<td>Classic</td>
+						</tr>
+						<tr>
+							<td>Ulysses</td>
+							<td>James Joyce</td>
+							<td>17</td>
+							<td>July 13, 2022</td>
+							<td>Not Available</td>
+							<td>Fiction</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<footer>
+			<hr />
+			<p>Copyright &copy; Group 4 2022</p>
+			<!-- <a href="https://www.youtube.com/watch?v=zU7OgLjA5zk" target="_blank"> -->
+			<i class="fa-brands fa-youtube fa-3x"></i>
+			<!-- </a> -->
+		</footer>
+	</body>
+</html>
